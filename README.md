@@ -8,7 +8,7 @@ A **Docusaurus** website for HOA architectural guidelines with automated GitHub 
 pnpm install
 
 # start development server
-pnpm start  # http://localhost:3000/hoa-guidelines/
+pnpm start  # http://localhost:3000/Timbers-Architecture-Guidelines/
 
 # build static site
 pnpm build
@@ -23,7 +23,7 @@ pnpm deploy
 ## GitHub Pages Deployment
 - The included workflow automatically builds and deploys to the `gh-pages` branch.  
 - Ensure Pages is enabled for the repo and points at the `gh-pages` branch.
-- Site will be available at: `https://ericcatlin.github.io/hoa-guidelines/`
+- Site will be available at: `https://ericcatlin.github.io/Timbers-Architecture-Guidelines/`
 
 ## Content Management
 - All content lives under `docs/` in Markdown files.  

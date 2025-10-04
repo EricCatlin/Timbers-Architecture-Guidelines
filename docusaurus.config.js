@@ -6,14 +6,14 @@ const config = {
   title: 'The Timbers HOA — Architectural Review Guidelines',
   tagline: 'Living, versioned guidance for architectural changes',
   url: 'https://ericcatlin.github.io',
-  baseUrl: '/hoa-guidelines/',
+  baseUrl: '/Timbers-Architecture-Guidelines/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
 
-  organizationName: 'ericcatlin',
-  projectName: 'hoa-guidelines',
+  organizationName: 'EricCatlin',
+  projectName: 'Timbers-Architecture-Guidelines',
 
-  deploymentBranch: 'gh-pages',
+  deploymentBranch: 'main',
   trailingSlash: false,
 
   markdown: {
@@ -30,7 +30,7 @@ const config = {
         docs: {
           routeBasePath: '/', // Docs as the site root
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/ericcatlin/hoa-guidelines/edit/main/',
+          editUrl: 'https://github.com/EricCatlin/Timbers-Architecture-Guidelines/edit/main/',
           showLastUpdateTime: false,
           showLastUpdateAuthor: false
         },
@@ -55,7 +55,7 @@ const config = {
           {to: '/', label: 'Guidelines', position: 'left'},
           {to: '/history', label: 'History', position: 'left'},
           {
-            href: 'https://github.com/ericcatlin/hoa-guidelines',
+            href: 'https://github.com/EricCatlin/Timbers-Architecture-Guidelines',
             label: 'GitHub',
             position: 'right',
           },
@@ -75,7 +75,7 @@ const config = {
           {
             title: 'Community',
             items: [
-              {label: 'Issues', href: 'https://github.com/ericcatlin/hoa-guidelines/issues'}
+              {label: 'Issues', href: 'https://github.com/EricCatlin/Timbers-Architecture-Guidelines/issues'}
             ],
           },
         ],
