@@ -1,0 +1,7 @@
+:root { --ifm-color-primary: #1d6f4d; }
+img { max-width: 100%; height: auto; }
+@media print {
+  nav, .theme-doc-toc-desktop, .theme-doc-sidebar-container, footer { display: none !important; }
+  main { margin: 0 !important; }
+  h1, h2, h3 { break-after: avoid; }
+}

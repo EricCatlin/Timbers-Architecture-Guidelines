@@ -1,0 +1,39 @@
+name: Build & Deploy (Docusaurus)
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install
+        run: npm ci
+
+      - name: Build Site
+        run: npm run build
+
+      - name: Generate PDF
+        run: npm run pdf
+
+      - name: Deploy to GitHub Pages (gh-pages)
+        env:
+          GIT_USER: github-actions[bot]
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run deploy

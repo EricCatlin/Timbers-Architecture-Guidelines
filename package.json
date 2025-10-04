@@ -1,0 +1,25 @@
+{
+  "name": "hoa-guidelines",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "serve": "docusaurus serve",
+    "deploy": "docusaurus deploy",
+    "pdf": "node ./scripts/build-pdf.mjs",
+    "lint:links": "docusaurus docs:version-check && docusaurus write-translations"
+  },
+  "dependencies": {
+    "@docusaurus/core": "^3.5.2",
+    "@docusaurus/preset-classic": "^3.5.2",
+    "clsx": "^2.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1",
+    "md-to-pdf": "^5.2.4",
+    "globby": "^14.0.1"
+  }
+}

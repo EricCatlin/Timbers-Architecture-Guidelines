@@ -1,0 +1,16 @@
+node_modules
+
+# Docusaurus build output
+build/
+
+# Static files cache
+.docusaurus/
+
+# macOS system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
