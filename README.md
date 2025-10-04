@@ -1,34 +1,34 @@
-# The Timbers HOA — Architectural Review Guidelines (JS Edition)
+# The Timbers HOA — Architectural Review Guidelines
 
-A **JavaScript-first** setup using **Docusaurus** (no YAML required) with GitHub Pages deploy and a Node-based PDF export.
+A **Docusaurus** website for HOA architectural guidelines with automated GitHub Pages deployment.
 
 ## Quick Start
 ```bash
-# install
-npm ci
+# install dependencies
+pnpm install
 
-# dev server
-npm run start  # http://localhost:3000
+# start development server
+pnpm start  # http://localhost:3000/hoa-guidelines/
 
 # build static site
-npm run build
+pnpm build
 
-# generate combined PDF
-npm run pdf   # outputs dist/Timbers-HOA-Guidelines.pdf
+# serve built site locally
+pnpm serve
 
-# deploy to GitHub Pages (pushes to gh-pages)
-npm run deploy
+# deploy to GitHub Pages
+pnpm deploy
 ```
 
-## Configure GitHub Pages
-- Replace `YOUR_GITHUB_USERNAME` in `docusaurus.config.js` (org name & editUrl).  
-- Push to `main`; the included workflow builds, generates a PDF, and deploys to `gh-pages`.  
-- Ensure Pages is enabled for the repo and points at `gh-pages`.
+## GitHub Pages Deployment
+- The included workflow automatically builds and deploys to the `gh-pages` branch.  
+- Ensure Pages is enabled for the repo and points at the `gh-pages` branch.
+- Site will be available at: `https://ericcatlin.github.io/hoa-guidelines/`
 
-## Content
-- All content lives under `docs/` in Markdown.  
+## Content Management
+- All content lives under `docs/` in Markdown files.  
 - Add attachments (PDFs/images) under `static/attachments/` and link them like `/attachments/your-file.pdf`.
+- Navigation is controlled by `sidebars.js`.
 
-## Notes
-- The PDF uses `md-to-pdf` to combine all docs (sorted by path) into a single printable PDF.  
-- Adjust the order by renaming files (e.g., `01-...`, `02-...`) or customizing `scripts/build-pdf.mjs`.
+## Exporting Content
+Users can export individual pages or the entire site as PDF using their browser's built-in "Print to PDF" feature (Cmd+P or Ctrl+P).

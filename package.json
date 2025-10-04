@@ -7,7 +7,6 @@
     "build": "docusaurus build",
     "serve": "docusaurus serve",
     "deploy": "docusaurus deploy",
-    "pdf": "node ./scripts/build-pdf.mjs",
     "lint:links": "docusaurus docs:version-check && docusaurus write-translations"
   },
   "dependencies": {
@@ -18,8 +17,6 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1",
-    "md-to-pdf": "^5.2.4",
-    "globby": "^14.0.1"
+    "gh-pages": "^6.1.1"
   }
 }

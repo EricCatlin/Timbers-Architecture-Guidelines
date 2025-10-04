@@ -34,9 +34,6 @@ jobs:
       - name: Build Site
         run: pnpm run build
 
-      - name: Generate PDF
-        run: pnpm run pdf
-
       - name: Deploy to GitHub Pages (gh-pages)
         env:
           GIT_USER: github-actions[bot]

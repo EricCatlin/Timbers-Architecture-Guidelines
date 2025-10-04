@@ -2,6 +2,7 @@ node_modules
 
 # Docusaurus build output
 build/
+dist/
 
 # Static files cache
 .docusaurus/
